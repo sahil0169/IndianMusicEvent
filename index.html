@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #f3f4f6;
+    color: #1a202c;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(130,63,129,1) 0%, rgba(142,33,33,1) 17%, rgba(148,31,130,1) 100%);
+}
+
+header {
+    background: #0c0c0c;
+    color: #edf2f7;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    background: linear-gradient(90deg, rgba(130,63,129,1) 0%, rgba(142,33,33,1) 17%, rgba(148,31,130,1) 100%);
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    margin: 0;
+    color: #f4f1f4;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #f7f9f9;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition:
+    background 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #f5f4f5;
+    color: #0e0e0f;
+}
+
+main {
+    margin-top: 200px;
+    padding: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Garamond', serif;
+    color: #fefafe;
+    border-bottom: 2px solid #101010;
+    padding-bottom: 10px;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #edf2f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.artist:hover {
+    transform: translateY(-5px);
+}
+
+.artist img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.artist h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background: #1a202c;
+    color: #edf2f7;
+}
+
+button {
+    background: #1b1a1a;
+    color: #edf2f7;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #efeeee;
+}
+
+footer {
+    background: #0d0d0d;
+    color: #edf2f7;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #edf2f7;
+    text-decoration: none;
+}
+
+
+footer p {
+    margin: 15px 0;
+}
+
+p{font-weight: 100;}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Indian Classical Music & Dance Festival</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>The Indian Classical Music & Dance Festival</h1>
+        <h2>Dedicated to Rashid Khan and Ganpati Bhatt</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>About the Festival</h1>
+            <p>The Indian Classical Music & Dance Festival is an annual event celebrating the rich heritage of Indian
+                classical arts. The festival features performances by renowned artists in the fields of music and dance,
+                offering a vibrant platform to showcase the cultural traditions of India. This edition is dedicated to
+                Rashid Khan and Ganpati Bhatt.</p>
+            <p><strong>Dates:</strong> August 15, 2024</p>
+            <p><strong>Venue:</strong> Jio World Plaza, Mumbai</p>
+        </section>
+
+        <section id="artists">
+            <h2>Featured Artists</h2>
+            <div class="artist">
+                <img src="C:\Users\SAHIL AGARWAL\Downloads\WebTEchno\Assessment 2\images (1).jpeg" alt="Artist 1">
+                <h3>Rashid Khan: </h3>
+                <p>Rashid Khan was born in Sahaswan, Badayun, Uttar Pradesh on 1 July 1968. He received his initial training from his maternal grand-uncle, Ustad Nissar Hussain Khan (1909–1993). He was also the nephew of Ustad Ghulam Mustafa Khan. As a child he had little interest in music.</p>
+            </div>
+            <div class="artist">
+                <img src="C:\Users\SAHIL AGARWAL\Downloads\WebTEchno\Assessment 2\download.jpeg" alt="Artist 2">
+                <h3>Pandit Kumar Gandharva</h3>
+                <p>Pandit Kumar Gandharva was a renowned Hindustani classical singer known for his distinctive singing style and innovative approach to music. He learned from BR Deodhar, who influenced his voice culture significantly.</p>
+            </div>
+            <div class="artist">
+                <img src="C:\Users\SAHIL AGARWAL\Downloads\WebTEchno\Assessment 2\download (1).jpeg" alt="Artist 2">
+                <h3>Baldev Singh<h3>
+                <h5>Baldev Singh Bali is an Indian classical musician and the Professor Emeritus at the Institute of Music and Fine Arts in Jammu. He has also served as the Principal of this institution and studied at Jammu & Kashmir University.
+                </h5>
+            </div>
+
+            <div class="artist">
+                <img src="C:\Users\SAHIL AGARWAL\Downloads\WebTEchno\Assessment 2\download (2).jpeg" alt="Artist 2">
+                <h3>Ganpati Bhatt</h3>
+                <h5>
+                    Ganapati Bhat, also known as Ganapati Bhat Hasanagi, is an Indian Hindustani classical vocalist associated with the Kirana-Gwalior Gharana. He is recognized for his contributions to the genre of classical music
+                </h5>
+            </div>
+
+        </section>
+
+        <section id="schedule">
+            <h2>Festival Schedule</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Performance</th>
+                    <th>Venue</th>
+                </tr>
+                <tr>
+                    <td>15/08/2024</td>
+                    <td>10:00</td>
+                    <td>Performance by Rashid Khan</td>
+                    <td>Jio World Plaza</td>
+                </tr>
+                <tr>
+                    <td>15/08/2024</td>
+                    <td>16:00</td>
+                    <td>Performance by Ganpati Bhatt</td>
+                    <td>Bastian By The Bay</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <p>Information on how to purchase tickets, including pricing options and seating categories.</p>
+            <button>Book Tickets</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: sahilagarwal3210@gmail.com | +91 7666989804</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>Subscribe to our newsletter for updates on future events.
+           Sahil Agarwal 
+        </p>
+    </footer>
+</body>
+
+</html>
